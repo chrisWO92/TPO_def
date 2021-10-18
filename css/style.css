@@ -1,0 +1,146 @@
+
+/* GENERAL STYLE */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+
+/* ELEMENTS PROPERTIES */
+
+body {
+    width: 100%;
+    min-height: 100%;
+    background: black;
+}
+
+.header {
+    background: green;
+    width: 100%;    
+    text-align: center;
+    grid-area: header;
+}
+
+.nav {
+    background: grey;
+    width: 100%;    
+    text-align: center;
+    grid-area: nav;
+}
+
+/* TESTIMONIALS GRID */
+
+.testimonials-container {
+    background: indigo;
+    color: white;
+    width: 100%;
+    text-align: center;
+    grid-area: tests;
+
+    display: grid;
+    gap: 10px;
+}
+
+.testimonials-container > div {
+    background: red;
+}
+
+
+/* WORKS GRID */
+
+.works-container {
+    background: lightblue;
+    width: 100%;   
+    text-align: center;
+    grid-area: works;
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr); 
+}
+
+.works-container img {
+    width: 100%;
+    height: 150px;
+}
+
+/* SKILLS CONTAINER */
+
+.skills {
+    background: yellow;
+    width: 100%;   
+    text-align: center;
+    grid-area: skills;
+}
+
+
+/* EXPERIENCE CONTAINER */
+
+.experience {
+    background: blue;
+    color: white;
+    width: 100%;    
+    text-align: center;
+    grid-area: exp;
+}
+
+/* FOOTER */
+
+footer {
+    background: orange;
+    color: black;
+    width: 100%;   
+    text-align: center;
+    grid-area: footer;
+}
+
+
+/* GRID CONTAINER */
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 50px auto auto auto auto 100px;
+    grid-template-areas: 
+        "header header header header"
+        "nav    nav    nav    nav"
+        "works  works  works  works"
+        "tests  tests  tests  tests"
+        "skills skills skills skills"        
+        "exp    exp    exp    exp"
+        "footer footer footer footer";
+}
+
+
+/* TABLET */
+
+@media (min-width: 600px) {
+
+    .works-container { 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);      
+    }
+
+}
+
+
+/* PC */
+
+@media (min-width: 900px) {
+    .works-container { 
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);      
+    }
+
+    .testimonials-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
