@@ -124,13 +124,13 @@ footer {
 @media (min-width: 600px) {
 
     .works-container { 
-        display: grid;
+        
         grid-template-columns: repeat(2, 1fr);
            
     }
 
     .testimonials-container {
-        display: grid;
+        
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -149,12 +149,12 @@ footer {
     }
 
     .works-container { 
-        display: grid;
+        
         grid-template-columns: repeat(4, 1fr);      
     }
 
     .testimonials-container {
-        display: grid;
+        
         grid-template-columns: repeat(4, 1fr);
     }
 }
