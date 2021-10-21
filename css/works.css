@@ -1,0 +1,145 @@
+/**********************************************************************/
+/************                   CELULARES                **************/
+
+.works-container {
+    
+    border: 2PX white solid;
+    color: white;
+    width: 90%;   
+    text-align: center;
+    grid-area: works;
+    margin: 30px auto;
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(1, 1fr);
+   
+}
+
+.works-container h2 {
+    border: 2px green dotted;
+    margin-bottom: 15px;
+}
+
+.works-container img {
+    width: 100%;
+    max-width: 385px;
+    max-height: 255px;
+}
+
+.works-container div {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.works-container div h3 {
+    margin-bottom: 20px;
+}
+
+.works-container div p {
+    border: 2px white solid;
+    text-align: justify;
+    justify-self: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 385px;
+    margin-top: 10px;
+    
+}
+
+
+
+
+
+
+/**********************************************************************/
+/*************                  TABLETS                  **************/
+
+@media (min-width: 600px) {
+
+    .works-container h2 {
+        grid-area: title;
+    }
+
+    .works-container { 
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "title title"
+            "row   row"
+            "row   row";  
+
+    }
+    
+}
+
+
+
+
+/**********************************************************************/
+/***************                   PC                ******************/
+
+
+@media (min-width: 900px) {
+
+    .works-container h2 {
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+    
+    .work1{
+        
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .work2{
+        
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .work3{
+        
+        grid-column-start: 5;
+        grid-column-end: 7;
+    }
+
+    .work4{
+        
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .work5{
+        
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .work6{
+        grid-column-start: 5;
+        grid-column-end: 7;
+    }
+
+    .work7{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .work8{
+        
+        grid-column-start: 4;
+        grid-column-end: 6;
+    }
+
+    .works-container { 
+        
+        grid-template-columns: repeat(6, 1fr);  
+            
+    }
+    
+}

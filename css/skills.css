@@ -1,0 +1,51 @@
+/**********************************************************************/
+/************                   CELULARES                **************/
+
+
+.skills-container {
+    border: 2px solid white;
+    color: white;
+    width: 80%; 
+    margin: 30px auto;  
+    text-align: center;
+    grid-area: skills;
+    display: grid;
+    
+}
+
+.skills-container ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-container ul li {
+    padding: 20px;
+}
+
+
+
+
+/**********************************************************************/
+/*************                  TABLETS                  **************/
+
+
+@media (min-width: 600px) {
+
+    
+}
+
+
+
+/**********************************************************************/
+/***************                   PC                ******************/
+
+
+@media (min-width: 900px) {
+
+    
+}

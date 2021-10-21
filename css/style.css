@@ -12,17 +12,17 @@ html {
 }
 
 
-/**********************************/
-/*******      CELULARES     *******/
-/**********************************/
+/**********************************************************************/
+/************                   CELULARES                **************/
 
 
-/*********     ELEMENTS PROPERTIES       ********/
+/*********     Elements properties       ********/
 
 body {
     font-family: 'Open Sans', sans-serif;
     width: 100%;
     min-height: 100%;
+    margin: 0 auto;
     
     /* BACKGROUND */
     
@@ -31,12 +31,12 @@ body {
 
 }
 
-/*********        GRID CONTAINER       ********/
+/*********        Grid container       ********/
 
 .grid-container {
     display: grid;
     gap: 0;    
-    grid-template-rows: 100vh 60px auto auto auto auto 100px;
+    
     grid-template-areas: 
         "header"
         "nav"
@@ -47,399 +47,25 @@ body {
         "footer";
 }
 
-/**********     HEADER       **********/
-
-.header {
-    
-    height: 100vh;    
-    text-align: center;
-    grid-area: header;
-    background: url(/assets/header.jpg) no-repeat center center/cover;
-    margin: 0;
-    padding: 0;
-}
 
 
-/******   NAV BAR    *****/
-
-.nav {
-    background: none;
-    width: 100%;   
-    text-align: center;
-    grid-area: nav;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    
-    padding: 0;
-}
-
-.nav a {
-    text-decoration: none;
-    color: white;
-}
-
-.nav-left {
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-    padding: 10px;
-}
-
-.nav-left img {
-    height: 90%;
-}
-
-.nav-left p {
-    margin-left: 10px;
-}
-
-.nav-right {
-    
-    list-style: none;
-    /* Se oculta para móviles y tablets.
-       En PC se setea propiedad display=flex */
-
-    display: none;
-}
-
-
-.nav ul li {
-    padding: 0 15px;
-}
-
-.open-menu, .close-menu {
-    display: block;
-    border: none;
-    color: wheat;
-    background: none;
-    cursor: pointer;
-}
-
-
-
-/*************       WORKS CONTAINER        ***********/
-
-.works-container {
-    
-    border: 2PX white solid;
-    color: white;
-    width: 90%;   
-    text-align: center;
-    grid-area: works;
-    margin: 30px auto;
-    display: grid;
-    gap: 0;
-    grid-template-columns: repeat(1, 1fr);
-   
-}
-
-.works-container h2 {
-    border: 2px green dotted;
-    margin-bottom: 15px;
-}
-
-.works-container img {
-    width: 100%;
-    max-width: 385px;
-    max-height: 255px;
-}
-
-.works-container div {
-    width: 90%;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.works-container div h3 {
-    margin-bottom: 20px;
-}
-
-.works-container div p {
-    border: 2px white solid;
-    text-align: justify;
-    justify-self: center;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 385px;
-    margin-top: 10px;
-    
-}
-
-
-
-/**********       TESTIMONIALS GRID        *********/
-
-.testimonials-container {
-    border: 2px solid white;
-    color: white;
-    width: 80%;
-    text-align: center;
-    grid-area: tests;
-    margin: 30px auto;
-    display: grid;
-    gap: 10px;
-}
-
-.testimonials-container h2 {
-    margin-bottom: 15px;
-}
-
-.testimonials-container div {
-    margin: 10px auto;
-    width: 90%;
-    max-width: 300px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.testimonials-container div h3 {
-    margin-bottom: 20px;
-}
-
-.testimonials-container div p {
-    text-align: justify;
-}
-
-
-
-/***********        SKILLS CONTAINER        *********/
-
-.skills-container {
-    border: 2px solid white;
-    color: white;
-    width: 80%; 
-    margin: 30px auto;  
-    text-align: center;
-    grid-area: skills;
-    display: grid;
-    
-}
-
-.skills-container ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-.skills-container ul li {
-    padding: 20px;
-}
-
-
-/**********       EXPERIENCE CONTAINER       ********/
-
-.experience {
-    background: blue;
-    color: white;
-    width: 100%;    
-    text-align: center;
-    grid-area: exp;
-}
-
-
-
-/*********          FOOTER          ********/
-
-footer {
-    background: orange;
-    color: black;
-    width: 100%;   
-    text-align: center;
-    grid-area: footer;
-}
-
-
-/********************************************/
-/*********           TABLET         *********/
-/********************************************/
-
+/**********************************************************************/
+/*************                  TABLETS                  **************/
 
 
 @media (min-width: 600px) {
 
-    /*****   WORKS CONTAINER   *****/
-    
-    .works-container h2 {
-        grid-area: title;
-    }
-
-    .works-container { 
-        gap: 20px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-            "title title"
-            "row   row"
-            "row   row";  
-
-    }
-
-    /*****   NAV BAR   *****/
-
-    .nav-right {
-        
-        list-style: none;
-        align-items: center;
-        justify-content: center;
-        margin-right: 20px;
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        align-items: center;
-        background-color: wheat;
-        height: 100%;
-        overflow-y: auto;
-
-        opacity: 0;
-
-        pointer-events: none;
-
-        transition: opacity 0.3s;
-
-    }
-
-    .open-menu, .close-menu {
-        display: block;
-        border: none;
-        color: white;
-        background: wheat;
-        cursor: pointer;
-
-    }
-
-    .close-menu {
-        align-self:  flex-end;
-    }
-
-    .menu-opened {
-        opacity: 1;
-        pointer-events: all;
-    }
-
-    /*****   TESTIMONIALS CONTAINER   *****/
-
-    .testimonials-container {
-        
-        grid-template-columns: repeat(1, 1fr);
-    }
+       
 
 }
 
 
 
-/********************************/
-/*********       PC      ********/
-/********************************/
+/**********************************************************************/
+/***************                   PC                ******************/
 
 
 @media (min-width: 900px) {
 
-
-    /*  GENERAL  */
-
-    body {
-        
-        min-height: 100%;
-        margin: 0 auto;
-    }
-
-
-    /**** NAV BAR   ****/
-
-    .open-menu, .close-menu {
-        display: none;
-    }
-
-    .nav-right {
-        display: flex;
-        list-style-type: none;
-    }
-
-    /****  WORKS CONTAINER  ****/
-
-    .works-container h2 {
-        grid-column-start: 1;
-        grid-column-end: 7;
-    }
-    
-    .work1{
-        
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-
-    .work2{
-        
-        grid-column-start: 3;
-        grid-column-end: 5;
-    }
-
-    .work3{
-        
-        grid-column-start: 5;
-        grid-column-end: 7;
-    }
-
-    .work4{
-        
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-
-    .work5{
-        
-        grid-column-start: 3;
-        grid-column-end: 5;
-    }
-
-    .work6{
-        grid-column-start: 5;
-        grid-column-end: 7;
-    }
-
-    .work7{
-        grid-column-start: 2;
-        grid-column-end: 4;
-    }
-
-    .work8{
-        
-        grid-column-start: 4;
-        grid-column-end: 6;
-    }
-
-    .works-container { 
-        
-        grid-template-columns: repeat(6, 1fr);  
-            
-    }
-
-
-    /****  TESTIMONIALS CONTAINER  ****/
-
-    .testimonials-container h2 {
-        grid-area: title;
-    }
-
-    .testimonials-container {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 
-            "title title title"
-            "row   row   row"
-            "row   row   row";
-        
-    }
-
-    
 
 }

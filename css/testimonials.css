@@ -1,0 +1,72 @@
+/**********************************************************************/
+/************                   CELULARES                **************/
+
+.testimonials-container {
+    border: 2px solid white;
+    color: white;
+    width: 80%;
+    text-align: center;
+    grid-area: tests;
+    margin: 30px auto;
+    display: grid;
+    gap: 10px;
+}
+
+.testimonials-container h2 {
+    margin-bottom: 15px;
+}
+
+.testimonials-container div {
+    margin: 10px auto;
+    width: 90%;
+    max-width: 300px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonials-container div h3 {
+    margin-bottom: 20px;
+}
+
+.testimonials-container div p {
+    text-align: justify;
+}
+
+
+
+
+/**********************************************************************/
+/*************                  TABLETS                  **************/
+
+
+@media (min-width: 600px) {
+
+    .testimonials-container {
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+
+
+/**********************************************************************/
+/***************                   PC                ******************/
+
+
+@media (min-width: 900px) {
+
+    .testimonials-container h2 {
+        grid-area: title;
+    }
+
+    .testimonials-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "title title title"
+            "row   row   row"
+            "row   row   row";
+        
+    }
+    
+}
