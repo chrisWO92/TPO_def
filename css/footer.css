@@ -2,6 +2,15 @@
 /************                   CELULARES                **************/
 
 
+/*********          FOOTER          ********/
+
+footer {
+    background: orange;
+    color: black;
+    width: 100%;   
+    text-align: center;
+    grid-area: footer;
+}
 
 
 
