@@ -52,7 +52,9 @@ body {
     grid-template-areas: 
         "header"
         "nav"
+        "svg-1"
         "works"
+        "svg-2"
         "tests"
         "skills"        
         "exp"
