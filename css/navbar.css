@@ -10,7 +10,7 @@
     text-align: center;
     grid-area: nav;
     display: flex;
-    
+    align-items: center;
     justify-content: space-between;
     
     position: fixed;
@@ -20,26 +20,32 @@
     height: 60px;
     margin: 0 auto;
 
-   
-
+    z-index: 2;
     
 }
 
 
 
-.nav a {
+.nav > a {
     text-decoration: none;
-    
+   
 }
 
 .nav-left {
     display: flex;
     align-items: center;
     margin-left: 30px;
-    justify-content: center;
+    justify-content: flex-start;
     margin-left: 0px;
     pointer-events: all;
-    
+    cursor: pointer;
+    padding: 0px 10px;
+    height: 50px;
+}
+
+.nav-left:hover {
+    border: 2px solid var(--theme-color);
+    border-radius: 10px;
 }
 
    
@@ -50,20 +56,19 @@
     align-items: center;
 }
 
-.nav-left > a > img {
-    padding-left: 20px;
-}
+
 
 .nav-left > a > img {
-    height: 60%;
+    height: 90%;
     
 }
 
 .nav-left p {
-    margin-left: 20px;
+    
     color: var(--theme-color);
     font-size: 16px;
     font-weight: bold;
+    
 }
 
 .nav-right {
@@ -137,8 +142,14 @@
 
    
 .nav-right a {
+    text-decoration: none;
     color: var(--theme-color);
     font-weight: bold;
+    padding: 7px;
+}
+
+.nav-right a:hover {
+    border-bottom: 2px solid var(--theme-color);
 }
 
 .menu-opened {
@@ -248,7 +259,7 @@
     }
 
     .nav ul li {
-        padding: 0 20px;
+        
         margin: 0;
         font-size: 18px;
     }

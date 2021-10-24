@@ -1,32 +1,72 @@
 /**********************************************************************/
 /************                   CELULARES                **************/
 
+.svg-3 {
+    grid-area: svg-3;
+    position: relative;
+    top: 5px;
+    z-index: -10;
+}
+.svg-4 {
+    grid-area: svg-4;
+    transform: scaleY(-1);
+    position: relative;
+    top: 0px;
+    z-index: -10;
+}
+
 
 .skills-container {
-    border: 2px solid white;
-    color: white;
-    width: 80%; 
-    margin: 30px auto;  
+    position: relative;
+    top: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--theme-color);
+    background-color: var(--primary-color);
+    width: 100%; 
+    padding: 50px 20px 0;  
     text-align: center;
     grid-area: skills;
-    display: grid;
+    height: 450px;
+    z-index: -1;
     
 }
+
+.skills-container h2 {
+    margin-top: 25px;
+    margin-bottom: 55px;
+    font-size: 3.3vw;
+    font-size: 5.0vh;
+    width: 100%;
+    
+}
+
 
 .skills-container ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     width: 100%;
     align-items: center;
     justify-content: center;
+    
 }
 
-.skills-container ul li {
-    padding: 20px;
+.skills-skill {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    
 }
 
+.skills-skill:hover {
+    background-color: var(--fourth-color);
+}
 
 
 
@@ -36,6 +76,27 @@
 
 @media (min-width: 600px) {
 
+    .skills-container {
+        
+        height: 60vw;
+        min-height: 800px;
+        
+    }
+    
+    .skills-container h2 {
+        margin-top: 25px;
+        margin-bottom: 55px;
+        font-size: 4.3vw;
+        font-size: 6.0vh;
+        
+    }
+
+    .skills-container ul {
+       
+       
+        width: 70%;
+        
+    }
     
 }
 
@@ -46,6 +107,13 @@
 
 
 @media (min-width: 900px) {
+
+    .skills-container {
+        
+        height: 60vw;
+        min-height: 800px;
+        
+    }
 
     
 }

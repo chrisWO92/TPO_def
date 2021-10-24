@@ -130,6 +130,13 @@
     color: var(--primary-color);
 }
 
+.social-media > li > a:hover {
+    color: var(--fourth-color);
+}
+
+.social-media > li> p:hover {
+    color: var(--fourth-color);
+}
 
 .social-media > * {
     padding: 0 10px;
