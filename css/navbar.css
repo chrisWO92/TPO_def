@@ -285,5 +285,6 @@
         color: var(--theme-color);
         font-weight: bold;
         pointer-events: all;
+        text-decoration: none;
     }
 }

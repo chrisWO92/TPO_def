@@ -30,7 +30,7 @@
     <!--  FONT AWESOME  -->
     <script src="https://kit.fontawesome.com/ff7547bec3.js" crossorigin="anonymous"></script>
 
-    <title>Form - TPO - Portfolio</title>
+    <title>Contact - TPO - Portfolio</title>
 </head>
 
 <body>
@@ -66,60 +66,32 @@
     </nav>
 
     <div style="padding-top: 120px; padding-bottom: 120px;" class="row vh-80 justify-content-center align-items-center ">
-        <h2 class="col-12 text-center pb-3">Sign in</h2>
-        <form class="col-8 col-md-8 col-xl-8 needs-validation" novalidate>
+        <h2 class="col-12 text-center pb-3">Contact</h2>
+        <form class="col-8 col-md-8 col-xl-5 needs-validation" novalidate>
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="floatingName" placeholder="Your Name" required>
                 <label for="floatingLastname">Name</label>
                 <div class="valid-feedback">
-                    Looks good!
+                    Please enter your name.
                   </div>
             </div>
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingLastname" placeholder="Your Lastname" required>
-                <label for="floatingLastname">Lastname</label>
-                <div class="valid-feedback">
-                    Looks good!
-                  </div>
-            </div>
+            
             <div class="form-floating mb-3">
                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                 <label for="floatingInput">Email address</label>
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                
                 <div class="invalid-feedback">
-                    Please choose a username.
+                    Please enter an email.
                   </div>
             </div>
             <div class="form-floating mb-3">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
-                <label for="floatingPassword">Password</label>
+                <textarea class="form-control" id="floatingTextarea" placeholder="Leave a comment here" required></textarea>
+                <label for="floatingTextarea">Message</label>
                 <div class="invalid-feedback">
-                    Please enter your password.
+                    Please enter your message.
                   </div>
             </div>
-            <div class="row g-0 justify-content-between">
-                <div class="form-floating mb-3 mw-40 col-12 col-md-6">
-                    <input type="text" class="form-control" id="floatingAddress" placeholder="Your Address" required>
-                    <label for="floatingAddress">Address</label>
-                    <div class="invalid-feedback">
-                        Please enter your direction.
-                      </div>
-                </div>
-                <div class="form-floating mb-3 col-12 col-md-5">
-                    <input type="text" class="form-control" id="floatingZipCode" placeholder="Your Zip Code" required>
-                    <label for="floatingZipcode">Zip Code</label>
-                    <div class="invalid-feedback">
-                        Please enter your Zip Code.
-                      </div>
-                </div>
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                <label class="form-check-label" for="exampleCheck1">Agree to terms and conditions</label>
-                <div class="invalid-feedback">
-                    You must agree before submitting.
-                  </div>
-            </div>
+            
             <button type="submit" class="btn btn-primary w-100">Register</button>
         </form>
     </div>
