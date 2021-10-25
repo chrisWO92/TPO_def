@@ -2,9 +2,9 @@
    agregarle funcionalidades, como abrir y cerrar
    el menú en los dispositivos móviles.*/
 
-const menu = document.querySelector(".nav-right");
-const openMenuBtn = document.querySelector(".open-menu");
-const closeMenuBtn = document.querySelector(".close-menu");
+const menu = document.querySelector(".barnav-right");
+const openMenuBtn = document.querySelector(".barnav-open-menu");
+const closeMenuBtn = document.querySelector(".barnav-close-menu");
 
 
 /* Función toggle para que cuando esté el menú 
@@ -13,7 +13,7 @@ const closeMenuBtn = document.querySelector(".close-menu");
    Esto se aplica al objeto de clase .menu-opened*/
 
 function toggleMenu() {
-    menu.classList.toggle("menu-opened");
+    menu.classList.toggle("barnav-menu-opened");
 }
 
 /* Posteriormente se añade el evento "click

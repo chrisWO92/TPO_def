@@ -3,12 +3,12 @@
 /**********************************************************************/
 /************               MOBILE & GENERAL             **************/
 
-.nav {
+.barnav {
     
     width: 100%;
     
     text-align: center;
-    grid-area: nav;
+    grid-area: barnav;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,12 +26,12 @@
 
 
 
-.nav > a {
+.barnav > a {
     text-decoration: none;
    
 }
 
-.nav-left {
+.barnav-left {
     display: flex;
     align-items: center;
     margin-left: 30px;
@@ -41,16 +41,17 @@
     cursor: pointer;
     padding: 0px 10px;
     height: 50px;
+    margin-bottom: 0;
 }
 
-.nav-left:hover {
+.barnav-left:hover {
     border: 2px solid var(--theme-color);
     border-radius: 10px;
 }
 
    
 
-.nav-left > a {
+.barnav-left > a {
     height: 90%;
     display: flex;
     align-items: center;
@@ -58,20 +59,27 @@
 
 
 
-.nav-left > a > img {
+.barnav-left > a > img {
     height: 90%;
     
 }
 
-.nav-left p {
+.barnav-left p {
     
     color: var(--theme-color);
     font-size: 16px;
     font-weight: bold;
-    
+    text-align: center;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 0px;
+    margin-bottom: 0;
 }
 
-.nav-right {
+.barnav-right {
     
     list-style: none;
 
@@ -95,14 +103,16 @@
 }
 
 
-.nav-right li {
-    padding: 20px;
-    font-size: 4.7vw;
+.barnav-right li {
+    
+    font-size: 4.2vw;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
 }
 
 
 
-.nav-right i {
+.barnav-right i {
     
    font-size: 39px;
    color: var(--theme-color);
@@ -110,7 +120,7 @@
 
 }
 
-.close-menu {
+.barnav-close-menu {
     
     display: flex;
     justify-content: flex-end;
@@ -124,7 +134,7 @@
     margin-bottom: 50px;
 }
 
-.open-menu {
+.barnav-open-menu {
     display: block;
     background: none;
     border: none;
@@ -134,25 +144,25 @@
     
 }
 
-.open-menu i {
+.barnav-open-menu i {
     
     color: var(--theme-color);
     font-size: 29px;
 }
 
    
-.nav-right a {
+.barnav-right a {
     text-decoration: none;
     color: var(--theme-color);
     font-weight: bold;
     padding: 7px;
 }
 
-.nav-right a:hover {
+.barnav-right a:hover {
     border-bottom: 2px solid var(--theme-color);
 }
 
-.menu-opened {
+.barnav-menu-opened {
     opacity: 1;
     
     pointer-events: all;
@@ -170,34 +180,39 @@
     
    
 
-    .nav-right li {
-        padding: 30px;
+    .barnav-right li {
+        padding-right: 1.5vw;
+        padding-left: 1.5vw;
         font-size: 3.5vw;
     }
 
 
 
-    .nav-right i {
+    .barnav-right i {
         
        font-size: 43px;
              
     
     }
     
-    .close-menu {
+    .bar-nav-close-menu {
         padding-right: 7px;
     }
     
-    .open-menu i {
+    .barnav-open-menu i {
         font-size: 30px;
     }
 
-    .menu-opened {
+    .barnav-menu-opened {
         opacity: 1;
         
         pointer-events: all;
     }
     
+    .barnav-left p {
+        
+        padding-top: 0;
+    }
     
 }
 
@@ -212,7 +227,7 @@
 
     
 
-    .nav {
+    .barnav {
         
     
         min-width: 860px;  
@@ -227,16 +242,18 @@
         
     }
     
-          
+    .barnav-left {
+        margin: 0;
+    }
    
-    .nav-left p {
-        margin-left: 20px;
+    .barnav-left p {
+        margin: 0 0 0 20px;
         
         font-size: 18px;
-        
+        padding-top: 0;
     }
     
-    .nav-right {
+    .barnav-right {
         
         flex-direction: row;
         justify-content:flex-end;
@@ -248,23 +265,23 @@
     }
     
        
-    .close-menu {
+    .barnav-close-menu {
         
         display: none;
         
     }
     
-    .open-menu {
+    .barnav-open-menu {
         display: none;
     }
 
-    .nav ul li {
+    .barnav ul li {
         
         margin: 0;
         font-size: 18px;
     }
     
-    .nav-right a {
+    .barnav-right a {
         color: var(--theme-color);
         font-weight: bold;
         pointer-events: all;
