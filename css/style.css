@@ -53,7 +53,7 @@ body {
     grid-template-columns: 100%;    
     grid-template-areas: 
         "header"
-        "nav"
+        "barnav"
         "svg-1"
         "works"
         "svg-2"
