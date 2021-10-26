@@ -3,6 +3,63 @@
 /**********************************************************************/
 /************               MOBILE & GENERAL             **************/
 
+.texts {
+   margin: auto; 
+   display: flex;
+   
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.name {
+    font-size: 3rem;
+    margin-bottom: .5em;
+    padding-left: 1.3rem;
+    transition: color ease-in 1s;
+}
+
+.paragraph {
+    font-size: 2rem;
+    font-weight: 300;
+    padding-left: 1.5rem;
+    --clippy: circle(0% at 50% 50%);
+    transition: color ease-in 1s 1s;
+}
+
+.item {
+    position: relative;
+    
+}
+
+.item::before{
+    content: "";
+    display: block;
+    transition: clip-path ease-in 1s;
+    background: var(--primary-color);
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    clip-path: var(--clippy);
+}
+
+.name:hover::before{
+    clip-path: polygon(0 0, 89% 0, 100% 100%, 0% 100%);
+}
+
+.name:hover + .paragraph::before {
+    clip-path: circle(150% at 50% 50%);
+    transition: clip-path ease-in 1s 1s;
+}
+
+
+.name:hover, .name:hover +.paragraph {
+    color: var(--theme-color);
+}
+
 .header {
     
     height: 100vh; 
@@ -19,7 +76,7 @@
 
 
 .header-container {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -146,6 +203,10 @@
 
 .social-media > li > a > p {
     display: none;
+}
+
+.item {
+
 }
 
 /**********************************************************************/

@@ -265,7 +265,7 @@
         grid-template-columns: repeat(6, 1fr);  
         grid-template-rows: 10vw 22vw 22vw 22vw;
         gap: 40px;
-        padding: 40px 100px 120px;
+        padding: 100px 100px 120px;
         align-items: center;
         justify-content: center;
             
