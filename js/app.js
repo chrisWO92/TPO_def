@@ -7,6 +7,7 @@ const openMenuBtn = document.querySelector(".barnav-open-menu");
 const closeMenuBtn = document.querySelector(".barnav-close-menu");
 
 
+
 /* Función toggle para que cuando esté el menú 
    cerrado lo abra y cuando esté abierto lo 
    cierre
