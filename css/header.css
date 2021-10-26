@@ -12,16 +12,17 @@
 }
 
 .name {
-    font-size: 3rem;
+    font-size: 8vw;
     margin-bottom: .5em;
-    padding-left: 1.3rem;
+    padding-left: 0.3rem;
     transition: color ease-in 1s;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 
 .paragraph {
-    font-size: 2rem;
+    font-size: 5vw;
     font-weight: 300;
-    padding-left: 1.5rem;
+    padding-left: 0.4rem;
     --clippy: circle(0% at 50% 50%);
     transition: color ease-in 1s 1s;
 }
@@ -36,7 +37,7 @@
     display: block;
     transition: clip-path ease-in 1s;
     background: var(--primary-color);
-    width: 120%;
+    width: 110%;
     height: 100%;
     position: absolute;
     top: 0;
@@ -220,6 +221,26 @@
     
     }    
     
+    .name {
+        font-size: 3rem;
+        margin-bottom: .5em;
+        padding-left: 1.3rem;
+       
+    }
+    
+    .paragraph {
+        font-size: 2rem;
+        font-weight: 300;
+        padding-left: 1.5rem;
+        --clippy: circle(0% at 50% 50%);
+        transition: color ease-in 1s 1s;
+    }
+
+    .item::before{
+        
+        width: 120%;
+    }
+        
 }
 
 
@@ -273,5 +294,25 @@
         display: block;
         font-size: 1.3vw;
         font-size: 1.9vh;
+    }
+
+    .name {
+        font-size: 3rem;
+        margin-bottom: .5em;
+        padding-left: 1.3rem;
+       
+    }
+    
+    .paragraph {
+        font-size: 2rem;
+        font-weight: 300;
+        padding-left: 1.5rem;
+        --clippy: circle(0% at 50% 50%);
+        transition: color ease-in 1s 1s;
+    }
+
+    .item::before{
+        
+        width: 120%;
     }
 }
