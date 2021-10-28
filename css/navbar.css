@@ -54,6 +54,7 @@
     height: 90%;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 
@@ -98,7 +99,7 @@
     padding: 0;
     margin: 0;
     
-    z-index: 2;
+    
 }
 
 
@@ -177,7 +178,7 @@
 
 @media (min-width: 600px) {
     
-   
+    
 
     .barnav-right li {
         padding-right: 1.5vw;

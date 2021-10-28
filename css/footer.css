@@ -21,7 +21,7 @@ footer {
     display: flex;
     flex-direction: row;
     padding-top: 40px;
-    padding-left: 65px;
+    padding-left: 55px;
     padding-bottom: 70px;
 }
 
@@ -45,7 +45,7 @@ footer {
     justify-content: flex-start;
     padding: 15px 0;
     color: var(--footer-text);
-    font-size: 2.5vw;
+    font-size: 2.9vw;
 }
 
 .social-media-footer > li > a > p {
@@ -54,7 +54,7 @@ footer {
 }
 
 .menu-footer {
-    padding-left: 100px;
+    padding-left: 60px;
 }
 
 .menu-footer > li > a {
@@ -64,7 +64,7 @@ footer {
     justify-content: flex-start;
     padding: 15px 0;
     color: var(--footer-text);
-    font-size: 2.5vw;
+    font-size: 2.7vw;
 }
 
 .footer ul li a:hover {
@@ -93,6 +93,9 @@ footer {
         
         font-size: 2.2vw;
     }
+    .menu-footer {
+        padding-left: 100px;
+    }
 }
 
 
@@ -120,4 +123,7 @@ footer {
         font-size: 1.1rem;
     }
     
+    .menu-footer {
+        padding-left: 100px;
+    }
 }
